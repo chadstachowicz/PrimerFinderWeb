@@ -1,0 +1,56 @@
+<h1 style="margin-top:40px">Primer Finder v1.0</h1>
+<h3>Author: Chad Stachowicz (cstachowicz@cloverhound.com)</h3>
+<p>You can use this small application to search for primers for PCR in a sequence of your choice</p>
+<a href="https://twitter.com/chadstachowicz">Twitter</a>
+<br/>
+<form>
+  <div class="form-group">
+    <label for="sequence" class="col-sm-2 col-form-label">Sequence to search</label>
+      <textarea class="form-control" id="sequence" rows="10"></textarea>
+  </div><br/>
+  <h5>Melting Temperature Range (Tm)</h5>
+  <div class="form-group row">
+    <label for="minTm" class="col-sm-2 col-form-label">Min Tm</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="minTm" value="40">
+    </div>
+    <label for="maxTm" class="col-sm-2 col-form-label">Min Tm</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="maxTm" value="60">
+    </div>
+  </div><br/>
+  <h5>GC Content Range (GC)</h5>
+  <div class="form-group row">
+    <label for="minGc" class="col-sm-2 col-form-label">Min GC</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="minGc" value="50">
+    </div>
+    <label for="maxGc" class="col-sm-2 col-form-label">Max GC</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="maxGc" value="60">
+    </div>
+  </div><br/>
+  <h5>Primer Length Range</h5>
+  <div class="form-group row">
+    <label for="minPmBp" class="col-sm-2 col-form-label">Min</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="minPmBp" value="22">
+    </div>
+    <label for="maxPmBp" class="col-sm-2 col-form-label">Max</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="maxPmBp" value="28">
+    </div>
+  </div><br/>
+  <h5>Amplicon Length Range</h5>
+  <div class="form-group row">
+    <label for="minAmpBp" class="col-sm-2 col-form-label">Min</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="minAmpBp" value="300">
+    </div>
+    <label for="maxAmpBp" class="col-sm-2 col-form-label">Max</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="maxAmpBp" value="1000">
+    </div>
+  </div><br/>
+  <button type="submit" class="btn btn-primary mb-2">Find Primers</button>
+</form>
