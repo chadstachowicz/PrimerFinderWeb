@@ -3,3 +3,56 @@
 <p>You can use this small application to search for primers for PCR in a sequence of your choice</p>
 <a href="https://twitter.com/chadstachowicz">Twitter</a>
 <br/>
+
+<h2>Forward Primers</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Sequence</th>
+      <th scope="col">Start Position</th>
+      <th scope="col">Sequence Length</th>
+      <th scope="col">GC Content</th>
+      <th scope="col">Temperature (Tm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @forward_results.each do |d| %>
+    <tr>
+      <th scope="row"></th>
+      <td><%= d[0] %></td>
+      <td><%= d[1] %></td>
+      <td><%= d[2] %></td>
+      <td><%= d[3] %></td>
+      <td><%= d[4] %></td>
+      <td><%= d[5] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table><br/>
+  <h2>Reverse Primers</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Sequence</th>
+      <th scope="col">Start Position</th>
+      <th scope="col">Sequence Length</th>
+      <th scope="col">GC Content</th>
+      <th scope="col">Temperature (Tm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reverse_results.each do |d| %>
+    <tr>
+      <th scope="row"></th>
+      <td><%= d[0] %></td>
+      <td><%= d[1] %></td>
+      <td><%= d[2] %></td>
+      <td><%= d[3] %></td>
+      <td><%= d[4] %></td>
+      <td><%= d[5] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
